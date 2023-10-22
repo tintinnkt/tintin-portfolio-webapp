@@ -1,25 +1,62 @@
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #50198f5d;
-    padding: 10px 20px;
     height: 100%;
     margin: auto;
-    color: #fff9a8;
-    border-radius: 20px;
     font-family: 'Anuphan', sans-serif;
+    place-items: center;
 }
-main.contents{
+
+main.contents {
+    width: 93%;
+    border-radius: 20px;
+    background-color: #50198f5d;
+    padding: 15px 0 40px 0;
     display: flex;
-    justify-content: space-around;
 }
+
 .name {
-    width: fit-content;
-    font-size: 25px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.name>h2{
-    color: #fff56d;
+
+.name>ul {
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    width: 40%;
+    border-bottom: 1px solid #ebffa3;
+    padding: 0 0 15px 0;
+    margin: 0 15px;
+}
+
+.name>ul>li {
+    padding-bottom: 5px;
+    border-radius: 15px;
+    transition: 0.8s;
+}
+
+.name>ul>li:hover {
+    transition: 0.7s;
+    scale: 1.03;
+    letter-spacing: 1px;
+}
+
+.name>ul.info>li>Text>.TextCon>.TextChild {
+    color: red;
+}
+
+.TextCon>.TextLabel {
+    font-size: 22px;
+    color: #c9bee7d0;
+}
+
+.TextCon>.TextChild {
+    padding-left: 10px;
+    color: #fff9a8;
 }
 

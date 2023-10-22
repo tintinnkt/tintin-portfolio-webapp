@@ -81,6 +81,8 @@ nav.navBar{
     align-items: center;
 }
 .navBar>ul {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
     padding: 0 0 10px 0;
     display: block;
     width: fit-content;

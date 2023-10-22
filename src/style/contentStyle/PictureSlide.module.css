@@ -1,0 +1,41 @@
+.container {
+    background-color: #23211180;
+    border-radius: 20px;
+}
+
+.container>img {
+    border-radius: 20px 20px 0 0;
+}
+
+.container>.selector {
+    height: 35px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.container>.selector>ul{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+.container>.selector>ul>li {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: 0 10px;
+    transition: 0.2s;
+}
+.container>.selector>ul>li:hover{
+    transition: 0.3s;
+    border-radius: 30%;
+    scale: 1.2;
+    background-color: #ffe69a;
+}
+.container>.selector>ul>li.active{
+    transition: 0.3s;
+    scale: 1.4;
+    background-color: #ffd65c;
+}

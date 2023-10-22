@@ -26,11 +26,11 @@ function Navmenu() {
       </div>
       <nav className={`${style.navBar} ${isNavActive ? style.active : ''}`}>
         <ul>
-          <li><a href="" className={`${style.active} ${style['nav-menu']}`}>Home</a></li>
+          <li><a href="" className={`${style.active}`}>Home</a></li>
           <li><a href="">My Info</a></li>
           <li><a href="">Projects</a></li>
+          <li><a href="">Contest</a></li>
           <li><a href="">Activities</a></li>
-          <li><a href="">Contact</a></li>
         </ul>
       </nav>
     </header>

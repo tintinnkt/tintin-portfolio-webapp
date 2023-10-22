@@ -3,6 +3,7 @@ import style from '../style/Pstyles/home.module.css'
 //component
 import Navmenu from '../component/Navmenu'
 import MyInfo from '../component/contents/MyInfo'
+import Projects from '../component/contents/Projects'
 const Home = () => {
     const [activeSection, setActiveSection] = useState<string>('');
 
@@ -16,6 +17,7 @@ const Home = () => {
             <div className={style.containerBackground} />
                 <main className={style.homeContent}>
                     <div className={style.eachContent}><MyInfo /></div>
+                    <div className={style.eachContent}><Projects /></div>
                     
                 </main>
         </React.Fragment>

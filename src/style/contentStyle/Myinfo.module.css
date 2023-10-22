@@ -1,0 +1,25 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #50198f5d;
+    padding: 10px 20px;
+    height: 100%;
+    margin: auto;
+    color: #fff9a8;
+    border-radius: 20px;
+    font-family: 'Anuphan', sans-serif;
+}
+main.contents{
+    display: flex;
+    justify-content: space-around;
+}
+.name {
+    width: fit-content;
+    font-size: 25px;
+}
+.name>h2{
+    color: #fff56d;
+}
+

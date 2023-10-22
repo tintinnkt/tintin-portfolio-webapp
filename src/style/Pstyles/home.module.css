@@ -1,0 +1,32 @@
+.containerBackground {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('/background1.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(30%);
+}
+
+.homeContent {
+    
+    padding-left: 20%;
+    filter: brightness(100%);
+    padding-top: 30px;
+    margin-left: 10px;
+    color: #ffffff;
+    min-width: 380px;
+
+    font-family: 'Noto Sans TC', sans-serif;
+   
+}
+
+.eachContent{
+    padding: 0 20px;
+    transition: 0.7s;
+}

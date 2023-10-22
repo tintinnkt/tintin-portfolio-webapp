@@ -1,0 +1,16 @@
+header.container{
+    font-size: 40px;
+    font-family: monospace;
+    color: #edff8a;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 0 25px 0;
+}
+.line{
+    width: 40%;
+    height: 0px;
+    border: 1px solid #ffd689;
+}

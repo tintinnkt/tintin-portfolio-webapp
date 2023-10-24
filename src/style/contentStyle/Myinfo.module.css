@@ -46,17 +46,24 @@ main.contents {
     letter-spacing: 1px;
 }
 
-.name>ul.info>li>Text>.TextCon>.TextChild {
-    color: red;
-}
 
 .TextCon>.TextLabel {
     font-size: 22px;
     color: #c9bee7d0;
+    user-select: none;
 }
 
 .TextCon>.TextChild {
     padding-left: 10px;
     color: #fff9a8;
+    user-select: text;
 }
 
+.picCon{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: fit-content;
+    margin-bottom: 10px;
+}

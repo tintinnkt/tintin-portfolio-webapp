@@ -1,5 +1,5 @@
 .containerBackground {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
 
@@ -17,7 +17,7 @@
     
     padding-left: 20%;
     filter: brightness(100%);
-    padding-top: 30px;
+    padding-top: 5px;
     margin-left: 10px;
     color: #ffffff;
     min-width: 380px;
@@ -27,6 +27,6 @@
 }
 
 .eachContent{
-    padding: 0 20px;
+    padding: 0 10px 20px 10px;
     transition: 0.7s;
 }

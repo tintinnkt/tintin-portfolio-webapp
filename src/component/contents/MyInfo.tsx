@@ -10,6 +10,22 @@ type TextProps = {
   label: string;
   children: string;
 };
+const images = [
+  {
+    src: 'https://i.pinimg.com/564x/81/68/2f/81682fb8437b89d61af4edaa0cad8259.jpg',
+  },
+  {
+    src: 'https://i.pinimg.com/564x/8c/2e/df/8c2edf472a94c5ad3e598eaa8cd2edcf.jpg',
+  },
+  {
+    src: 'https://i.pinimg.com/564x/07/71/de/0771def6ce01b3346836869482e4d86b.jpg',
+  },
+  {
+    src: 'https://i.pinimg.com/564x/23/e2/c6/23e2c6533dc1eec933c700c15fe394fb.jpg',
+    description: ""
+  },
+];
+
 
 const Text = ({ label, children }: TextProps) => {
   return (
@@ -21,13 +37,13 @@ const Text = ({ label, children }: TextProps) => {
 };
 
 type Props = {
-  // Define any props specific to MyInfo here if needed
+
 };
 function MyInfo({ }: Props) {
   return (
     <React.Fragment>
       <div className={style.container}>
-        <ContentHeader name="My Personal Info" />
+        <ContentHeader name="My Personal Information" />
         <main className={style.contents}>
           <div className={style.name}>
             <ul className={style.info}>
@@ -37,8 +53,8 @@ function MyInfo({ }: Props) {
               <li><Text label="Age">18 years old</Text></li>
               <li><Text label='Sex'>Male</Text></li>
             </ul>
-            <div>
-              <PictureSlide />
+            <div className={style.picCon}>
+              <PictureSlide images={images} />
             </div>
             <ul>
               <li><Text label='Nationality'>Thai </Text></li>

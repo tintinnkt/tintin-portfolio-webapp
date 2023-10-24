@@ -1,0 +1,30 @@
+[
+  {
+    "src": "src/assets/projectPic/Fi-management/login.png",
+    "description": "Login Page"
+  },
+  {
+    "src": "src/assets/projectPic/Fi-management/home.png",
+    "description": "Home Page"
+  },
+  {
+    "src": "src/assets/projectPic/Fi-management/profile.png",
+    "description": "Profile"
+  },
+  {
+    "src": "src/assets/projectPic/Fi-management/adding.png",
+    "description": "Adding Transaction Record Page"
+  },
+  {
+    "src": "src/assets/projectPic/Fi-management/history.png",
+    "description": "History Page"
+  },
+  {
+    "src": "src/assets/projectPic/Fi-management/savings.png",
+    "description": "Savings Page"
+  },
+  {
+    "src": "src/assets/projectPic/Fi-management/debt.png",
+    "description": "Debt Page"
+  }
+]

@@ -1,12 +1,12 @@
 header.menuNav {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top: 0;
     left: -14px;
     width: 22%;
     min-width: 200px;
     height: 100%;
-    background-image: linear-gradient(180deg, #1b1b35,#2d3c57, #586a74);
+    background-image: linear-gradient(180deg, #342350,#383870, #8792c0);
     display: block;
     align-items: center;
     border-radius: 18px;
@@ -14,6 +14,7 @@ header.menuNav {
     transition: 0.7s;
 
     font-family: 'Anuphan', sans-serif;
+    user-select: none;
     
 
 }
@@ -109,7 +110,7 @@ nav.navBar{
 .navBar>ul>li>a.active {
     scale: 1.2;
     color: #203763;
-    background-color: #ffefbc;
+    background-color: #fcff60c4;
 }
 
 .navBar.active {

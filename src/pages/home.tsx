@@ -1,25 +1,72 @@
-import React,{useState} from 'react'
-import style from '../style/Pstyles/home.module.css'
-//component
-import Navmenu from '../component/Navmenu'
-import MyInfo from '../component/contents/MyInfo'
-import Projects from '../component/contents/Projects'
-import HomeContent from '../component/contents/HomeContent'
+import React, { useState, useEffect } from 'react';
+import style from '../style/Pstyles/home.module.css';
+import Navmenu from '../component/Navmenu';
+import MyInfo from '../component/contents/MyInfo';
+import Projects from '../component/contents/Projects';
+import HomeContent from '../component/contents/HomeContent';
+
 const Home = () => {
+  const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  
-    return (
-        <React.Fragment>
-                <div className={style.nav}><Navmenu /></div>
-            <div className={style.containerBackground} />
-                <main className={style.homeContent}>
-                <div className={style.eachContent}><HomeContent /></div>
-                    <div className={style.eachContent}><MyInfo /></div>
-                    <div className={style.eachContent}><Projects /></div>
-                    
-                </main>
-        </React.Fragment>
-    )
-}
+  const checkSection = () => {
+    const sections = document.querySelectorAll(`.${style.eachContent}`);
+    sections.forEach((section) => {
+      const topEdge = section.getBoundingClientRect().top + window.scrollY - 80;
+      const bottomEdge = topEdge + section.clientHeight;
+      const wScroll = window.scrollY;
 
-export default Home
+      if (topEdge < wScroll && bottomEdge > wScroll) {
+        const currentId = section.getAttribute('data-section');
+        setActiveSection(currentId);
+      }
+    });
+  };
+
+  useEffect(() => {
+    checkSection();
+    window.addEventListener('scroll', checkSection);
+
+    return () => {
+      window.removeEventListener('scroll', checkSection);
+    };
+  }, []);
+
+  const showSection = (section: string, isAnimate: boolean) => {
+    if (section) {
+      const direction = section.replace('#', '');
+      const reqSection = document.querySelector(`[data-section="${direction}"]`);
+      const reqSectionPos = reqSection?.getBoundingClientRect().top + window.scrollY;
+
+      if (isAnimate) {
+        window.scrollTo({
+          top: reqSectionPos,
+          behavior: 'smooth',
+        });
+      } else {
+        window.scrollTo(0, reqSectionPos);
+      }
+    }
+  };
+
+  return (
+    <React.Fragment>
+      <div className={style.nav}>
+        <Navmenu activeSection={activeSection} showSection={showSection} />
+      </div>
+      <div className={style.containerBackground} />
+      <main className={style.homeContent}>
+        <div className={style.eachContent} data-section="homecontent">
+          <HomeContent />
+        </div>
+        <div className={style.eachContent} data-section="myinfo">
+          <MyInfo />
+        </div>
+        <div className={style.eachContent} data-section="projects">
+          <Projects />
+        </div>
+      </main>
+    </React.Fragment>
+  );
+};
+
+export default Home;

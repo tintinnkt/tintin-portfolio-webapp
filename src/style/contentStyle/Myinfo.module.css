@@ -33,6 +33,10 @@ main.contents {
     padding: 0 0 15px 0;
     margin: 0 15px;
 }
+.name>ul.info{
+    font-weight: 500;
+    font-size: 31px;
+}
 
 .name>ul>li {
     padding-bottom: 5px;
@@ -63,7 +67,7 @@ main.contents {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
+    width: 45%;
     height: fit-content;
     margin-bottom: 10px;
 }

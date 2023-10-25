@@ -22,7 +22,7 @@ main.contents {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 10px 0;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     height: fit-content;
     padding: 10px 30px 0;
@@ -60,6 +60,7 @@ main.contents {
 }
 
 .detail .learn {
+    user-select: none;
     width: fit-content;
     margin: 20px 0;
 }
@@ -95,10 +96,13 @@ main.contents {
 }
 
 .connectContainer {
+    user-select: none;
     font-weight: 500;
     padding: 10px 10px;
-    background-color: #525c573f;
+    background-color: #7eb89bad;
     border-radius: 10px;
+    color: #270808;
+    font-weight: 500;
 
 }
 

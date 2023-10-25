@@ -54,14 +54,14 @@ function MyInfo({ }: Props) {
               <li><Text label='Sex'>Male</Text></li>
             </ul>
             <div className={style.picCon}>
-              <PictureSlide images={images} />
+              <PictureSlide images={images} style={{ width: '100%', height: '370px' }}/>
             </div>
-            <ul>
+            <ul className={style.name}>
               <li><Text label='Nationality'>Thai </Text></li>
               <li><Text label='Place of Birth'>Bangkok</Text></li>
             </ul>
 
-            <ul>
+            <ul className={style.name}>
               <li><Text label='School'> Debsirin School</Text></li>
               <li><Text label='Study Plan'> Science-Math</Text></li>
               <li><Text label='GPAX'>3.90 (5 semesters)</Text></li>

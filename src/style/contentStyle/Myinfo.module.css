@@ -27,6 +27,7 @@ main.contents {
 .name>ul {
     display: flex;
     flex-direction: column;
+    min-width: -moz-fit-content;
     min-width: fit-content;
     width: 40%;
     border-bottom: 1px solid #ebffa3;
@@ -54,13 +55,16 @@ main.contents {
 .TextCon>.TextLabel {
     font-size: 22px;
     color: #c9bee7d0;
+    -webkit-user-select: none;
     user-select: none;
 }
 
 .TextCon>.TextChild {
     padding-left: 10px;
     color: #fff9a8;
+    -webkit-user-select: text;
     user-select: text;
+
 }
 
 .picCon{
@@ -68,6 +72,7 @@ main.contents {
     display: flex;
     flex-wrap: wrap;
     width: 45%;
+    height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 10px;
 }

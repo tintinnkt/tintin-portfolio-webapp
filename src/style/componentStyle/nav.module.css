@@ -6,7 +6,7 @@ header.menuNav {
     width: 22%;
     min-width: 200px;
     height: 100%;
-    background-image: linear-gradient(180deg, #342350,#383870, #8792c0);
+    background-image: linear-gradient(180deg, #342350, #383870, #8792c0);
     display: block;
     align-items: center;
     border-radius: 18px;
@@ -14,10 +14,13 @@ header.menuNav {
     transition: 0.7s;
 
     font-family: 'Anuphan', sans-serif;
-    user-select: none ;
-    
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
 
 }
+
 .logoCon>.name {
     font-size: 33px;
     font-weight: bold;
@@ -28,52 +31,60 @@ header.menuNav {
 }
 
 .hamburger {
+    width: -moz-fit-content;
     width: fit-content;
     display: none;
 }
-.logoCon{
+
+.logoCon {
     width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.logo{
+
+.logo {
     width: 75px;
     height: 75px;
 }
-.profileCon{
+
+.profileCon {
     display: flex;
     flex-direction: column;
     width: 100%;
     min-width: 150px;
     align-items: center;
 }
-.profileCon > img{
+
+.profileCon>img {
     position: relative;
     left: -5px;
     top: -25px;
     width: 65%;
     min-width: 150px;
 }
-.profileCon > .fullname{
+
+.profileCon>.fullname {
     position: relative;
     top: -18px;
     border-radius: 16px;
     padding: 10px 10px;
     font-size: 29px;
     color: #fff6a3;
-    text-align:center;
+    text-align: center;
     text-shadow: 1.5px 1.5px #ffffff73;
     transition: 1s;
 }
-.profileCon > .fullname:hover{
+
+.profileCon>.fullname:hover {
     /* background-image: linear-gradient(90deg,#ffbf8b86,#ffd4b186); */
     color: #d093ff;
     transition: 1s;
     letter-spacing: 1px;
 }
-nav.navBar{
+
+nav.navBar {
     position: relative;
     top: 0px;
     display: flex;
@@ -81,11 +92,13 @@ nav.navBar{
     justify-content: center;
     align-items: center;
 }
+
 .navBar>ul {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 500;
     padding: 0 0 10px 0;
     display: block;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -128,12 +141,14 @@ nav.navBar{
         padding: 10px 0px 0 14px;
         display: flex;
         flex-direction: column;
-        
+
     }
-    .logoCon{
+
+    .logoCon {
         justify-content: center;
     }
-    .profileCon > .fullname{
+
+    .profileCon>.fullname {
         font-size: 20px;
     }
 
@@ -143,20 +158,22 @@ nav.navBar{
     header.menuNav {
         width: 10%;
     }
-    .navBar>ul>li>a{
-        margin: 20  10px;
+
+    .navBar>ul>li>a {
+        margin: 20 10px;
         padding: 8px 15px;
     }
-    .logoCon>.name{
+
+    .logoCon>.name {
         font-size: 15px;
     }
 
 }
 
 @media only screen and (max-width:700px) {
-    
+
     header.menuNav {
-        background-image: linear-gradient(90deg, #1b1b35,#2d3c57, #586a74);
+        background-image: linear-gradient(90deg, #1b1b35, #2d3c57, #586a74);
         width: 100%;
         left: 0;
         top: -14px;
@@ -166,9 +183,11 @@ nav.navBar{
         justify-content: space-evenly;
         flex-direction: row;
     }
-    .profileCon{
+
+    .profileCon {
         display: none;
     }
+
     .hamburger {
         display: block;
         cursor: pointer;
@@ -191,7 +210,7 @@ nav.navBar{
         margin: 6px 0;
         border-radius: 7px;
     }
-    
+
     nav.navBar {
         height: 0;
         position: absolute;
@@ -201,57 +220,63 @@ nav.navBar{
         width: 100vw;
         transition: 0.8s;
         overflow: hidden;
-        background-image: linear-gradient(90deg, #1b1b35,#2d3c57, #586a74);
+        background-image: linear-gradient(90deg, #1b1b35, #2d3c57, #586a74);
         border-radius: 20px;
         z-index: 10;
 
     }
-    
+
     .navBar>ul {
         display: block;
+        width: -moz-fit-content;
         width: fit-content;
         margin: 30px auto 0 auto;
         text-align: center;
         transition: 1.4s;
         opacity: 0;
     }
-    
+
     .navBar ul li a {
 
         margin-bottom: 12px;
     }
-    .logoCon{
+
+    .logoCon {
         width: 60%;
         flex-direction: row;
     }
-    .logoCon>.name{
+
+    .logoCon>.name {
         padding-inline: 15px;
         font-size: 40px;
         width: 50%;
     }
 }
 
-@media only screen and (max-width:470px){
-    .logoCon > .name{
+@media only screen and (max-width:470px) {
+    .logoCon>.name {
         transition: 0.5s;
         font-size: 35px;
     }
-    .logoCon > img.logo{
+
+    .logoCon>img.logo {
         width: 60px;
         height: 60px;
     }
-    header.menuNav{
+
+    header.menuNav {
         justify-content: space-around;
     }
 }
 
-@media only screen and (max-width:390px){
-    header.menuNav{
+@media only screen and (max-width:390px) {
+    header.menuNav {
         width: 100%;
         padding-inline: 0px;
         justify-content: center;
     }
-    .logoCon>.name{
+
+    .logoCon>.name {
         font-size: 27px;
     }
 }

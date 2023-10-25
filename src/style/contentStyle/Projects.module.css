@@ -96,6 +96,7 @@ main.contents {
 }
 
 .connectContainer {
+    -webkit-user-select: none;
     user-select: none;
     font-weight: 500;
     padding: 10px 10px;

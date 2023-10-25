@@ -32,21 +32,25 @@ const Home = () => {
   }, []);
 
   const showSection = (section: string, isAnimate: boolean) => {
-    if (section) {
-      const direction = section.replace('#', '');
-      const reqSection = document.querySelector(`[data-section="${direction}"]`);
-      const reqSectionPos = reqSection?.getBoundingClientRect().top + window.scrollY;
+  if (section) {
+    const direction = section.replace('#', '');
+    const reqSection = document.querySelector(`[data-section="${direction}"]`);
+    const reqSectionPos = (reqSection?.getBoundingClientRect().top ?? 0) + window.scrollY;
 
-      if (isAnimate) {
-        window.scrollTo({
-          top: reqSectionPos,
-          behavior: 'smooth',
-        });
-      } else {
-        window.scrollTo(0, reqSectionPos);
-      }
+    if (isAnimate) {
+      window.scrollTo({
+        top: reqSectionPos,
+        behavior: 'smooth',
+      });
+    } else {
+      window.scrollTo(0, reqSectionPos);
     }
-  };
+
+    // Modify the URL without adding to history
+    window.history.replaceState(null, '', window.location.pathname + `${""}`);
+  }
+};
+
 
   return (
     <React.Fragment>

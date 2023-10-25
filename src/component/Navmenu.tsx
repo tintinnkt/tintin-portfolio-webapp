@@ -69,7 +69,7 @@ const Navmenu: React.FC<NavmenuProps> = ({ activeSection, showSection }) => {
           />
           <NavigationLink
             activeSection={activeSection}
-            section="MyInfo"
+            section="myinfo"
             showSection={showSection}
             label="My Info"
           />

@@ -56,7 +56,7 @@ const Navmenu: React.FC<NavmenuProps> = ({ activeSection, showSection }) => {
         <div className={style.line}></div>
       </div>
       <div className={style.profileCon}>
-        <img src="/src/assets/Tintin_profile-port.png" alt="mypic" />
+        <img src="/src/assets/Tintin_nav.png" alt="mypic" />
         <div className={style.fullname}>Krittin Tragunejindarat<br />กฤติน ตระกูลจินดารัตน์</div>
       </div>
       <nav className={`${style.navBar} ${isNavActive ? style.active : ''}`}>
@@ -78,6 +78,12 @@ const Navmenu: React.FC<NavmenuProps> = ({ activeSection, showSection }) => {
             section="projects"
             showSection={showSection}
             label="Projects"
+          />
+          <NavigationLink
+            activeSection={activeSection}
+            section="contests"
+            showSection={showSection}
+            label="Contests"
           />
           <NavigationLink
             activeSection={activeSection}

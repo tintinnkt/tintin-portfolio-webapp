@@ -28,6 +28,7 @@ header.menuNav {
     letter-spacing: 1px;
     padding-inline: 10px;
     text-shadow: 4px 4px #434c5a91;
+    
 }
 
 .hamburger {
@@ -59,15 +60,14 @@ header.menuNav {
 
 .profileCon>img {
     position: relative;
-    left: -5px;
-    top: -25px;
     width: 65%;
     min-width: 150px;
 }
 
 .profileCon>.fullname {
+    background-color: #1b1b35a6;
     position: relative;
-    top: -18px;
+    top: -8px;
     border-radius: 16px;
     padding: 10px 10px;
     font-size: 29px;
@@ -81,7 +81,6 @@ header.menuNav {
     /* background-image: linear-gradient(90deg,#ffbf8b86,#ffd4b186); */
     color: #d093ff;
     transition: 1s;
-    letter-spacing: 1px;
 }
 
 nav.navBar {
@@ -179,8 +178,8 @@ nav.navBar {
         top: -14px;
         height: 120px;
         display: flex;
-        padding: 0 50px;
-        justify-content: space-evenly;
+        padding: 20px;
+        justify-content: space-between;
         flex-direction: row;
     }
 
@@ -265,15 +264,14 @@ nav.navBar {
     }
 
     header.menuNav {
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-inline: 15px;
     }
 }
 
-@media only screen and (max-width:390px) {
+@media only screen and (max-width:420px) {
     header.menuNav {
         width: 100%;
-        padding-inline: 0px;
-        justify-content: center;
     }
 
     .logoCon>.name {

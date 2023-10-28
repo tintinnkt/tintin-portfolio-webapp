@@ -17,7 +17,7 @@ const PictureSlide: React.FC<PictureSlideProps> = ({ images, style: customStyle 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((currentSlide + 1) % images.length);
-    }, 15000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [currentSlide, images]);
 

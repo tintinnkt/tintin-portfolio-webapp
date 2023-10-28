@@ -39,7 +39,6 @@ const Projects: React.FC<Props> = (props: Props) => {
       <div className={style.container}>
           <ContentHeader name='Projects' componentProp={<Tabber onToggle={()=>setShowing(!projectShowing)}/>} />
         <main className={style.contents}>
-          {/* project 1 */}
           <div className={style.projectContainer}>
             {projectShowing ? <FiManagement /> : <MyPort />}
           </div>

@@ -1,10 +1,10 @@
 {
   "posn1": [
-    {"src":"src/assets/contestPics/POSN/posn1-1.png"},
-   { "src":"src/assets/contestPics/POSN/posn1-2.png"}
+    { "src": "src/assets/contestPics/POSN/posn1-1.png" },
+    { "src": "src/assets/contestPics/POSN/posn1-2.png" }
   ],
   "posn2": [
-   { "src":"src/assets/contestPics/POSN/posn2-1.png"},
-    {"src":"src/assets/contestPics/POSN/posn2-2.png"}
+    { "src": "src/assets/contestPics/POSN/posn2-1.jpg" },
+    { "src": "src/assets/contestPics/POSN/posn2-2.jpg" }
   ]
 }

@@ -4,6 +4,7 @@ import Navmenu from '../component/Navmenu';
 import MyInfo from '../component/contents/MyInfo';
 import Projects from '../component/contents/Projects';
 import HomeContent from '../component/contents/HomeContent';
+import Contest from '../component/contents/Contest';
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -67,6 +68,9 @@ const Home = () => {
         </div>
         <div className={style.eachContent} data-section="projects">
           <Projects />
+        </div>
+        <div className={style.eachContent} data-section="contests">
+          <Contest />
         </div>
       </main>
     </React.Fragment>

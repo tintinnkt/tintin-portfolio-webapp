@@ -8,7 +8,7 @@ type ImageWithDescription = {
 
 type PictureSlideProps = {
   images: ImageWithDescription[];
-  style?: CSSProperties; // Custom style for the images
+  style?: CSSProperties;
 };
 
 const PictureSlide: React.FC<PictureSlideProps> = ({ images, style: customStyle }) => {
@@ -37,8 +37,8 @@ const PictureSlide: React.FC<PictureSlideProps> = ({ images, style: customStyle 
     <div className={style.container}>
       <img
         src={images[currentSlide].src}
-        alt=""
-        style={customStyle} // Apply custom style here
+        alt={images[currentSlide].description}
+        style={customStyle}
       />
       <div className={style.selector}>
         {images[currentSlide] ? (

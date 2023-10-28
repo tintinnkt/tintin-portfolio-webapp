@@ -1,0 +1,75 @@
+.toggle {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 290px;
+    height: 60px;
+    color: white;
+    outline: 0;
+    text-decoration: none;
+    border-radius: 100px;
+    border: 2px solid #546E7A;
+    background-image: linear-gradient(90deg,#e8ff64,#099,#80bbff);
+    transition: all 500ms;
+    cursor: pointer;
+  
+    color: #ffffff;
+    
+  
+    &:active {
+      background-color: #1c2529;
+    }
+  
+    &:hover:not(.toggle--moving) {
+      &:after {
+        background-color: #455A64;
+      }
+    }
+  
+    &:after {
+      display: block;
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 4px;
+      width: calc(50% - 4px);
+      line-height: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+      background-color: #37474F;
+      border: 2px solid;
+      transition: all 500ms;
+      content: attr(data-label);
+    }
+  }
+  
+  .toggleOn {
+    &:after {
+      content: 'fiMa';
+      border-radius: 50px 5px 5px 50px;
+      color: #ffc353;
+      background-image: linear-gradient(90deg,#e8ff6486,#00999973);
+    }
+  }
+  
+  .toggleOff {
+    &:after {
+      content: 'myPort';
+      border-radius: 5px 50px 50px 5px;
+      color: #87ff6f;
+      transform: translate(100%, 0);
+      background-image: linear-gradient(90deg,#00999973,#80bbff79);
+    }
+  }
+  
+  .toggle--moving {
+    background-color: #1c2529;
+    &:after {
+      color: transparent;
+      border-color: #2e424e; 
+      background-color: #2d3b45; 
+      transition: color 0.2s, transform 300ms, border-radius 500ms, background-color 500ms;
+    }
+  }
+  

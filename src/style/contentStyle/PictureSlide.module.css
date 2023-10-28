@@ -5,6 +5,9 @@
     border-radius: 20px;
     overflow: hidden;
     position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .container>img {
@@ -16,6 +19,7 @@
 }
 
 .container>.selector {
+    height: -moz-fit-content;
     height: fit-content;
     padding-bottom: 10px;
     width: 100%;
@@ -35,7 +39,7 @@
     height: 15px;
     background-color: #ffffff;
     border-radius: 100%;
-    margin: 0 10px;
+    margin: 0 8px;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -56,6 +60,7 @@
     width: 20px;
     height: fit-content;
     background: none;
+    -webkit-user-select: none;
     user-select: none;
     color: #cec8b8;
     font-weight: 600;
@@ -68,6 +73,10 @@
 
 .selector > .description{
     width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    height: -moz-fit-content;
     height: fit-content;
     text-align: center;
+    padding: 5px 0;
 }

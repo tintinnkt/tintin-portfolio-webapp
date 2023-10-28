@@ -12,8 +12,12 @@ main.contents {
     width: 93%;
     border-radius: 20px;
     background-color: #50198f5d;
-    padding: 15px 0 40px 0;
+    padding: 15px 20px 40px 20px;
     display: flex;
+}
+main.additionContent{
+    margin-top: 15px;
+    display: block;
 }
 
 .name {
@@ -21,7 +25,8 @@ main.contents {
     font-size: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: auto;
 }
 
 .name>ul {
@@ -29,28 +34,84 @@ main.contents {
     flex-direction: column;
     min-width: -moz-fit-content;
     min-width: fit-content;
-    width: 40%;
     border-bottom: 1px solid #ebffa3;
-    padding: 0 0 15px 0;
-    margin: 0 15px;
+    padding: 0 0 5px 0;
+    margin: 0 15px 10px 0;
+    justify-content: start;
 }
-.name>ul.info{
+
+.name>ul.info {
     font-weight: 500;
     font-size: 31px;
+    width: 45%;
 }
+
+.name>ul.detail {
+    width: 20%;
+}
+
+.name>ul.grade {
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.name>ul.grade>li {
+    width: 45%;
+}
+
 
 .name>ul>li {
     padding-bottom: 5px;
     border-radius: 15px;
     transition: 0.8s;
+    display: flex;
 }
 
 .name>ul>li:hover {
     transition: 0.7s;
-    scale: 1.03;
-    letter-spacing: 1px;
+    scale: 1.01;
 }
 
+ul>li.listTopic {
+    width: 100% !important;
+    font-size: 29px;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    letter-spacing: 2px;
+}
+div.listTopic{
+    font-size: 29px;
+}
+div.hobby{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebffa3;
+}
+div.hobby>ul.hobby{
+    width: 68%;
+}
+ul.hobby > li.podcasts{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+ul.song{
+    width: 30%;
+}
+ul.song > li.playlist{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.TextCon {
+    padding-inline: 20px;
+}
 
 .TextCon>.TextLabel {
     font-size: 22px;
@@ -67,7 +128,7 @@ main.contents {
 
 }
 
-.picCon{
+.picCon {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -75,4 +136,6 @@ main.contents {
     height: -moz-fit-content;
     height: fit-content;
     margin-bottom: 10px;
+
 }
+

@@ -8,11 +8,25 @@ header.container {
     text-align: center;
     align-items: center;
     margin: 0 0 25px 0;
-    width: 80%;
+    width: 86%;
+}
+.container > .header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.container>.line {
+.container>.header>.line {
     width: 70%;
     height: 0px;
     border: 1px solid #ffd689;
+}
+.componentProp{
+    position: relative;
+    margin-left: auto;
+    top: -70px;
+    height: 0;
 }

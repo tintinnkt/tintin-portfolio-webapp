@@ -273,8 +273,14 @@ nav.navBar {
     header.menuNav {
         width: 100%;
     }
+    .logoCon{
+        width: -moz-fit-content;
+        width: fit-content;
+    }
 
     .logoCon>.name {
+        width: -moz-fit-content;
+        width: fit-content;
         font-size: 27px;
     }
 }

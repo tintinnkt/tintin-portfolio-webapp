@@ -15,12 +15,14 @@ main.contents {
     padding: 15px 20px 40px 20px;
     display: flex;
 }
-main.additionContent{
+
+main.additionContent {
     margin-top: 15px;
     display: block;
     background-color: #803fca5d;
 }
-main.additionContent > .Topic{
+
+main.additionContent>.Topic {
     position: relative;
     left: 5%;
     width: 30%;
@@ -74,7 +76,7 @@ ul.grade {
     margin: 0 20px 10px 0;
     justify-content: start;
     align-items: center;
-    
+
 }
 
 ul.grade>li {
@@ -84,12 +86,14 @@ ul.grade>li {
     transition: 0.8s;
     display: flex;
 }
-ul.grade>li:hover{
+
+ul.grade>li:hover {
     transition: 0.7s;
     scale: 1.01;
 }
-.aa1{
-    width:70%;
+
+.aa1 {
+    width: 70%;
 }
 
 
@@ -99,7 +103,7 @@ ul.grade>li:hover{
     display: flex;
 }
 
-.name>ul>li:hover{
+.name>ul>li:hover {
     transition: 0.7s;
     scale: 1.01;
 }
@@ -112,28 +116,36 @@ ul>li.listTopic {
     user-select: none;
     letter-spacing: 2px;
 }
-div.listTopic{
+
+div.listTopic {
     font-size: 29px;
 }
-div.hobby{
+
+div.hobby {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid #ebffa3;
 }
-div.hobby>ul.hobby{
+
+div.hobby>ul.hobby {
     width: 68%;
 }
-ul.hobby > li.podcasts{
+
+ul.hobby>li.podcasts {
     display: flex;
     justify-content: center;
     margin: 5px 0;
 }
-ul.song{
+
+ul.song {
+    display: flex;
+    flex-direction: column;
     width: 30%;
 }
-ul.song > li.playlist{
+
+ul.song>li.playlist {
     margin-top: 10px;
     width: 100%;
 }
@@ -169,3 +181,33 @@ ul.song > li.playlist{
 
 }
 
+@media only screen and (max-width:700px) {
+    main.additionContent>.Topic {
+        width: 60%;
+    }
+
+    .name>.picCon,
+    .name>ul.detail,
+    .aa1 {
+        width: 100%;
+    }
+
+    .name>ul {
+        width: 100%;
+    }
+
+    div.hobby {
+        flex-direction: column;
+    }
+
+    div.hobby>ul.hobby,
+    ul.song {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul.song>li.playlist {
+        width: 90%;
+    }
+}

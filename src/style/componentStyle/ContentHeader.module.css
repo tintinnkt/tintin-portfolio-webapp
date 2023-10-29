@@ -4,7 +4,6 @@ header.container {
     color: #edff8a;
     letter-spacing: 2px;
     display: flex;
-    flex-direction: column;
     text-align: center;
     align-items: center;
     margin: 0 0 25px 0;
@@ -29,6 +28,21 @@ header.container {
 .componentProp{
     position: relative;
     margin-left: auto;
-    top: -70px;
+    top: -20px;
     height: 0;
+}
+@media only screen and (max-width:700px){
+    header.container{
+        font-size: 40px;
+        flex-direction: column;
+        width: 99%;
+    }
+    .componentProp{
+        margin: 10px 0 0;
+        top: 0;
+        width: 100%;
+        height: -moz-fit-content;
+        height: fit-content;
+
+    }
 }

@@ -10,7 +10,7 @@
     background-image: url('/background1.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(25%);
+    filter: brightness(40%);
 
 
 }
@@ -31,6 +31,9 @@
 .contentContainer {
     padding: 0 10px 20px 10px;
     transition: 0.7s;
+}
+.bottom{
+    padding-bottom: 200px;
 }
 
 @media only screen and (max-width:700px) {

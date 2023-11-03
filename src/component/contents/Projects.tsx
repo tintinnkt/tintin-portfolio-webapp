@@ -20,10 +20,11 @@ const Tabber: React.FC<ToggleProps> = ({ onToggle }) => {
 
   return (
     <nav className={styles.projectNav}>
+      <div className={styles.block}>
       <div
         className={`${styles.toggle} ${isOn ? styles.toggleOff : styles.toggleOn }`}
         onClick={handleToggle}
-      >
+      />
       </div>
     </nav>
   );

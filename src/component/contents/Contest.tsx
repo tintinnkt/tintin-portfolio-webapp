@@ -26,10 +26,10 @@ const Contest = (props: Props) => {
                 <div className={style.topicContest}>POSN Camp 1 && Camp 2</div>
                 <div className={style.posn}>
                     <div className={style.detail}>
-                        <div className={style.picCon}>
-                            <PictureSlide images={[...posn.posn2, ...posn.posn1,]} style={{ height: '400px' }} />
-                        </div>
-                        <p>Through my participation in POSN camp1 and POSN camp2, I have gained a strong foundation in programming concepts and techniques. In the Camp 1st, I learned the basics of C programming, including variable types, operators, conditional statements, loops, arrays, strings, functions, pointers, and file management. This foundational knowledge laid the groundwork for my subsequent exploration of C++ programming in the Camp 2nd. There, I delved into {!showMorePOSN?<span className={style.show}onClick= {toggleReadMorePOSN}>...Read More</span>:
+                        <div className={`${style.picCon} + ${style.picConPC} `}><PictureSlide images={[...posn.posn2, ...posn.posn1,]} style={{ height: '360px' }} /></div>
+                        <div className={`${style.picCon} + ${style.picConPhone} `}><PictureSlide images={[...posn.posn2, ...posn.posn1,]} style={{ height: '200px' }} /></div>
+
+                        <p>Through my participation in POSN camp1 and POSN camp2, I have gained a strong foundation in programming concepts and techniques. In the Camp 1st, I learned the basics of C programming, including variable types, operators, conditional statements, loops, arrays, strings, functions, pointers, and file management. This foundational knowledge laid the groundwork for my subsequent exploration of C++ programming in the Camp 2nd. There, I delved into {!showMorePOSN ? <span className={style.show} onClick={toggleReadMorePOSN}>...Read More</span> :
                             <span>the intricacies of data structures, such as linked lists, stacks, queues, heaps, and binary search trees, and gained proficiency in selecting appropriate algorithms for various problem-solving scenarios. My exposure to algorithms encompassed brute force algorithms, recursion, dynamic programming, greedy algorithms, Dijkstra's algorithm, and Big-O analysis of algorithms. These intensive learning experiences have equipped me with a comprehensive understanding of programming principles and practices, enabling me to confidently tackle complex programming challenges.<span className={style.show} onClick={toggleReadMorePOSN}>Read Less...</span></span>}</p>
                     </div>
                     <div className={style.certificate}>
@@ -47,9 +47,6 @@ const Contest = (props: Props) => {
                                 คณะวิทยาศาสตร์ มหาวิทยาลัยเกษตรศาสตร์</div>
                         </div>
                     </div>
-                    <div className={style.detail}></div>
-                    <p></p>
-                    <p></p>
 
                 </div>
 
@@ -65,9 +62,9 @@ const Contest = (props: Props) => {
                                     คณะวิศวะกรรมศาสตร์ ณ มหาวิทยาลัยเกษตรศาสตร์</div></div></div>
                         <div className={style.detail}>
                             <p>
-                            <p>On December 17, 2023, I participated in the KU01 Programming Contest, hosted by the Department of Computer Engineering at Kasetsart University. I trained myself with C++ and passed the online round to reach the onsite round at Kasetsart University.</p>                 <p>At the onsite round, I met with fellow students who are passionate about solving problems with programming. We exchanged ideas and experiences, and I learned a lot about solving different types of programming problems. Even though I did not reach the final round, I am proud to have participated in the contest and gained valuable experience.{!showMore?<span className={style.show}onClick= {toggleReadMore}>...Read More</span>:null}</p>
-                            {showMore ? <><p>In addition to the contest, I also attended a guidance hosted by the Department of Computer Engineering. The seminar was very helpful for me to plan my future studies and learn more about the field of computer science.</p>
-                            <p>At the end of the contest, I had the opportunity to listen to a presentation of research projects by graduate students. The presentation inspired me to pursue further studies and develop my programming problem-solving skills.<span className={style.show} onClick={toggleReadMore}>Read Less...</span></p></>: null}
+                                <p>On December 17, 2023, I participated in the KU01 Programming Contest, hosted by the Department of Computer Engineering at Kasetsart University. I trained myself with C++ and passed the online round to reach the onsite round at Kasetsart University.</p>                 <p>At the onsite round, I met with fellow students who are passionate about solving problems with programming. We exchanged ideas and experiences, and I learned a lot about solving different types of programming problems. Even though I did not reach the final round, I am proud to have participated in the contest and gained valuable experience.{!showMore ? <span className={style.show} onClick={toggleReadMore}>...Read More</span> : null}</p>
+                                {showMore ? <><p>In addition to the contest, I also attended a guidance hosted by the Department of Computer Engineering. The seminar was very helpful for me to plan my future studies and learn more about the field of computer science.</p>
+                                    <p>At the end of the contest, I had the opportunity to listen to a presentation of research projects by graduate students. The presentation inspired me to pursue further studies and develop my programming problem-solving skills.<span className={style.show} onClick={toggleReadMore}>Read Less...</span></p></> : null}
                             </p>
                         </div>
                     </div>

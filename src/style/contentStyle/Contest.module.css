@@ -9,7 +9,7 @@
 }
 
 main.content {
-    width: 93%;
+    width: 94%;
     border-radius: 20px;
     background-image: linear-gradient(90deg,#eec0fdb4,#eec0fdb4,#bcee7acb);
     padding: 15px 0 20px 0;
@@ -41,10 +41,15 @@ main.content {
     margin-bottom: 15px;
 }
 
-.posn>.picCon {
+.posn>.detail>.picCon {
     width: 40%;
     margin: 10px 20px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.picConPhone{
+    display: none !important;
 }
 
 .detail {
@@ -75,9 +80,10 @@ main.content {
 
 .posn>.certificate>.picCon {
     width: 50%;
-    height: 500px;
+    height: 530px;
     margin: 0 30px;
 }
+
 
 .certificate>.picCon {
     width: 100%;
@@ -104,7 +110,7 @@ main.content {
 .ku01>.subContent {
     justify-content: center;
     display: flex;
-    width: 47%;
+    width: 40%;
     margin: 0 10px;
 }
 
@@ -125,17 +131,17 @@ main.content .picCon {
     border-radius: 15px;
     height: -moz-fit-content;
     height: fit-content;
-
+    text-align: center;
+    
 }
 .mainContent .certificate{
     display: flex;
     width: 90%;
 }
-
-main.content .picCon>.description {
+.certificate .picCon>.description {
     font-size: 15px;
     text-align: center;
-    padding: 15px 5px;
+    height: fit-content;
 }
 span.show{
     font-size: 15px;
@@ -157,11 +163,15 @@ span.show:hover{
 
 @media only screen and (max-width:870px) {
 
-    .posn>.picCon {
+    .posn>.detail>.picConPhone , .posn .certificate >.picCon{
         width: 100%;
         margin: 10px 0;
         height: -moz-fit-content;
         height: fit-content;
+        display: block !important;
+    }
+    .posn>.detail>.picConPC{
+        display: none;
     }
 
     .certificate {
@@ -178,7 +188,10 @@ span.show:hover{
         flex-wrap: wrap-reverse;
         padding: 0;
     }
-
+    /* .ku01 > .detail{
+        display: flex;
+        justify-content: center;
+    } */
     .detail>p {
         width: 100%;
         font-size: 15px;
@@ -186,7 +199,8 @@ span.show:hover{
     }
     .ku01>.mainContent ,.ku01>.subContent{
         width: 100%;
-        justify-content: center;
+        display: flex;
+        justify-content: start;
     }
 
 }

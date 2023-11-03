@@ -186,9 +186,21 @@ ul.song>li.playlist {
         width: 60%;
     }
 
-    .name>.picCon,
+    .TextCon>.TextLabel {
+        font-size: 15px;
+    }
+
+    .TextCon>.TextChild {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
     .name>ul.detail,
     .aa1 {
+        width: 100%;
+    }
+
+    .name>.picCon {
         width: 100%;
     }
 

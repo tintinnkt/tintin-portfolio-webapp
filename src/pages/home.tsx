@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import style from '../style/Pstyles/home.module.css';
 import Navmenu from '../component/Navmenu';
+
+//pages
 import MyInfo from '../component/contents/MyInfo';
 import Projects from '../component/contents/Projects';
 import HomeContent from '../component/contents/HomeContent';
 import Contest from '../component/contents/Contest';
+import Contact from '../component/contents/Contact';
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -72,7 +75,11 @@ const Home = () => {
         <div className={style.eachContent} data-section="contests">
           <Contest />
         </div>
+        <div className={style.eachContent} data-section="contact">
+          <Contact />
+        </div>
       </main>
+      <div className={style.bottom} />
     </React.Fragment>
   );
 };

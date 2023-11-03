@@ -46,7 +46,7 @@ function MyInfo({ }: Props) {
         <main className={style.contents}>
           <div className={style.name}>
             <ul className={style.info}>
-              <li className={style.listTopic}>Inspect</li>
+              <li className={style.listTopic}>Personal</li>
               <li><Text label="Thai Name"> นายกฤติน ตระกูลจินดารัตน์</Text></li>
               <li><Text label="English Name">Mr.Krittin Tragunejindarat</Text></li>
               <li><Text label="Nickname">Tintin (ตินติน)</Text></li>
@@ -68,7 +68,7 @@ function MyInfo({ }: Props) {
               <li><Text label='High School'> Debsirin School</Text></li>
               <li><Text label='Study Plan'> Science-Math</Text></li>
               <li><Text label='GPAX'>3.90 (5 semesters)</Text></li>
-              <li><Text label='Language'>Thai(ไทย) | English | Chinees《 華語 》</Text></li>
+              <li><Text label='Language'>Thai (ไทย) | English | Chinese《 華語 》</Text></li>
             </ul>
        </div>
           </div>

@@ -7,6 +7,7 @@ interface NavigationLinkProps {
   section: string;
   showSection: (section: string, isAnimate: boolean) => void;
   label: string;
+  setIsNavActive: (active: boolean) => void;
 }
 
 const NavigationLink: React.FC<NavigationLinkProps> = ({
@@ -14,6 +15,7 @@ const NavigationLink: React.FC<NavigationLinkProps> = ({
   section,
   showSection,
   label,
+  setIsNavActive
 }) => {
   return (
     <li>
@@ -23,6 +25,7 @@ const NavigationLink: React.FC<NavigationLinkProps> = ({
         onClick={(e) => {
           e.preventDefault();
           showSection(`#${section}`, true);
+          setIsNavActive(false);
         }}
       >
         {label}
@@ -66,36 +69,42 @@ const Navmenu: React.FC<NavmenuProps> = ({ activeSection, showSection }) => {
             section="homecontent"
             showSection={showSection}
             label="Home"
+            setIsNavActive={setIsNavActive}
           />
           <NavigationLink
             activeSection={activeSection}
             section="myinfo"
             showSection={showSection}
             label="My Info"
+            setIsNavActive={setIsNavActive}
           />
           <NavigationLink
             activeSection={activeSection}
             section="projects"
             showSection={showSection}
             label="Projects"
+            setIsNavActive={setIsNavActive}
           />
           <NavigationLink
             activeSection={activeSection}
             section="contests"
             showSection={showSection}
             label="Contests"
+            setIsNavActive={setIsNavActive}
           />
           <NavigationLink
             activeSection={activeSection}
             section="activities"
             showSection={showSection}
             label="Activities"
+            setIsNavActive={setIsNavActive}
           />
           <NavigationLink
             activeSection={activeSection}
             section="contact"
             showSection={showSection}
             label="Contact"
+            setIsNavActive={setIsNavActive}
           />
         </ul>
       </nav>

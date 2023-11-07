@@ -11,30 +11,34 @@
 main.contents {
     width: 93%;
     border-radius: 20px;
-    background-color: #a0556cab;
+    background-color: #c9658383;
     padding: 15px 20px 40px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main.contents  ul{
+
+main.contents ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
 }
-main.contents  ul> li{
-    width:40%;
+
+main.contents ul>li {
+    width: 40%;
     display: flex;
 }
-.contactlist{
+
+.contactlist {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 30px 0;
     justify-content: left;
 }
-.contactlist > .colon{
+
+.contactlist>.colon {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,37 +47,102 @@ main.contents  ul> li{
 
 
 }
-.contactlist > .colon>div{
+
+.contactlist>.colon>div {
     width: 15px;
     height: 15px;
     background-color: #ffe18f;
     margin: 10px 0;
     border-radius: 50%;
 }
-.contactlist > img{
+
+.contactlist>img {
     width: 70px;
     -webkit-user-select: none;
     user-select: none;
 }
-.contactlist > a ,.contactlist  span{
+
+.contactlist>a,
+.contactlist span {
     color: #ffd154;
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 500;
     transition: 0.3s;
     border-radius: 20px 20px 0 0;
 }
-.contactlist > a:hover{
+
+.contactlist>a:hover {
     scale: 1.04;
-    border-bottom: 1px solid #78fbff;
+    text-decoration: underline;
+    color: #54b2ff;
     transition: 0.4s;
 }
-.contactlist >span> span.littlespan:hover{
+
+.contactlist>span>span.littlespan:hover {
     scale: 1.02;
     color: #78fbff;
     transition: 0.4s;
     cursor: pointer;
 }
-.bigspan{
+
+.bigspan {
     display: flex;
     flex-direction: column;
+}
+.copySuccessMessage{
+    color: #78fbff;
+}
+
+@media only screen and (max-width:1100px) {
+    main.contents {
+        width: 93%;
+        justify-content: center;
+    }
+
+    main.contents ul {
+        flex-direction: column;
+    }
+
+    main.contents ul>li {
+        width: auto;
+    }
+
+    .contactlist>a,
+    .contactlist span {
+        line-height: 1.8;
+    }
+
+    .contactlist>img {
+        width: 50px;
+    }
+
+    .contactlist>.colon>div {
+        margin: 10px 0;
+
+    }
+
+    .contactlist>span>span.littlespan:hover {
+        scale: 1.09;
+    }
+
+}
+@media only screen and (max-width:700px){
+    .contactlist>.colon>div {
+        width: 10px;
+        height: 10px;
+    }
+    .contactlist>img {
+        width: 60px;
+    }
+    .contactlist>a,
+    .contactlist span {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:470px){
+    .contactlist>a,
+    .contactlist span {
+        font-size: 20px;
+    }
 }

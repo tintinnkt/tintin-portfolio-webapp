@@ -8,6 +8,7 @@ import Projects from '../component/contents/Projects';
 import HomeContent from '../component/contents/HomeContent';
 import Contest from '../component/contents/Contest';
 import Contact from '../component/contents/Contact';
+import Activities from '../component/contents/Activities';
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -36,24 +37,24 @@ const Home = () => {
   }, []);
 
   const showSection = (section: string, isAnimate: boolean) => {
-  if (section) {
-    const direction = section.replace('#', '');
-    const reqSection = document.querySelector(`[data-section="${direction}"]`);
-    const reqSectionPos = (reqSection?.getBoundingClientRect().top ?? 0) + window.scrollY;
+    if (section) {
+      const direction = section.replace('#', '');
+      const reqSection = document.querySelector(`[data-section="${direction}"]`);
+      const reqSectionPos = (reqSection?.getBoundingClientRect().top ?? 0) + window.scrollY;
 
-    if (isAnimate) {
-      window.scrollTo({
-        top: reqSectionPos,
-        behavior: 'smooth',
-      });
-    } else {
-      window.scrollTo(0, reqSectionPos);
+      if (isAnimate) {
+        window.scrollTo({
+          top: reqSectionPos,
+          behavior: 'smooth',
+        });
+      } else {
+        window.scrollTo(0, reqSectionPos);
+      }
+
+      // Modify the URL without adding to history
+      window.history.replaceState(null, '', window.location.pathname + `${""}`);
     }
-
-    // Modify the URL without adding to history
-    window.history.replaceState(null, '', window.location.pathname + `${""}`);
-  }
-};
+  };
 
 
   return (
@@ -63,21 +64,12 @@ const Home = () => {
       </div>
       <div className={style.containerBackground} />
       <main className={style.homeContent}>
-        <div className={style.eachContent} data-section="homecontent">
-          <HomeContent />
-        </div>
-        <div className={style.eachContent} data-section="myinfo">
-          <MyInfo />
-        </div>
-        <div className={style.eachContent} data-section="projects">
-          <Projects />
-        </div>
-        <div className={style.eachContent} data-section="contests">
-          <Contest />
-        </div>
-        <div className={style.eachContent} data-section="contact">
-          <Contact />
-        </div>
+        <div className={style.eachContent} data-section="homecontent"><HomeContent /></div>
+        <div className={style.eachContent} data-section="myinfo"><MyInfo /></div>
+        <div className={style.eachContent} data-section="projects"><Projects /> </div>
+        <div className={style.eachContent} data-section="contests"><Contest /></div>
+        <div className={style.eachContent} data-section="activities"><Activities/></div>
+        <div className={style.eachContent} data-section="contact"><Contact /></div>
       </main>
       <div className={style.bottom} />
     </React.Fragment>

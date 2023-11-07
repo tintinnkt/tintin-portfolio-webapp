@@ -181,6 +181,7 @@ nav.navBar {
         padding: 20px;
         justify-content: space-between;
         flex-direction: row;
+        transition: 0.4s;
     }
 
     .profileCon {
@@ -213,14 +214,13 @@ nav.navBar {
     nav.navBar {
         height: 0;
         position: absolute;
-        top: 100px;
+        top: 90px;
         left: 0;
         right: 0;
         width: 100vw;
         transition: 0.8s;
         overflow: hidden;
-        background-image: linear-gradient(90deg, #1b1b35, #2d3c57, #586a74);
-        border-radius: 20px;
+        background-image: linear-gradient(90deg, #342350, #383870, #87a6c0);        border-radius: 20px;
         z-index: 10;
 
     }

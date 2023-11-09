@@ -59,7 +59,7 @@ const Navmenu: React.FC<NavmenuProps> = ({ activeSection, showSection }) => {
         <div className={style.line}></div>
       </div>
       <div className={style.profileCon}>
-        <img src="../../public/picture/Tintin_nav.png" alt="mypic" />
+        <img src="public/picture/Tintin_nav.png" alt="mypic" />
         <div className={style.fullname}>Krittin Tragunejindarat<br />กฤติน ตระกูลจินดารัตน์</div>
       </div>
       <nav className={`${style.navBar} ${isNavActive ? style.active : ''}`}>

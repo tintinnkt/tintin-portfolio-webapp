@@ -152,6 +152,7 @@ span.show{
     transition: 0.4s;
     -webkit-user-select: none;
     user-select: none;
+    cursor: pointer;
 }
 span.show:hover{
     color: #216980;
@@ -189,10 +190,6 @@ span.show:hover{
         flex-wrap: wrap-reverse;
         padding: 0;
     }
-    /* .ku01 > .detail{
-        display: flex;
-        justify-content: center;
-    } */
     .detail>p {
         width: 100%;
         font-size: 15px;

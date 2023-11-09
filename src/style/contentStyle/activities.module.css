@@ -51,6 +51,7 @@ main.contents {
     height: 20px;
     border-radius: 100%;
     background-color: #ffbf5f;
+    cursor: pointer;
 }
 
 .ActivitiesSelector>ul>li.mover {
@@ -61,6 +62,7 @@ main.contents {
     position: relative;
     width: 20px;
     height: 20px;
+    cursor: pointer;
 
     background-color: rgba(black, .9);
 
@@ -146,6 +148,7 @@ main.contents {
         border-radius: 20px 20px 0 0;
         transition: 0.9s;
     }
+
 }
 .NtnuBg {
     &::before{
@@ -158,14 +161,40 @@ main.contents {
     }
 }
 .contentCon>.contentTopic{
-    font-size: 29px;
-    width: 40%;
+    font-size: 37px;
+    width: 100%;
+    color: #8bc5ff;
+    font-weight: 600;
+    text-align: center;
 }
-.contentCon .detail{
-    width: 40%;
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.content > *{
+    border-radius: 10px;
+    margin:  10px 1%;
+    width: 47%;
+}
+.picCon{
+    margin: 20px 0;
+}
+.picture{
+    object-fit:contain;
+    border-radius: 20px;
+}
+
+.content> .detail{
+    font-size: 20px;
+    font-weight: 300 !important;
+}
+.content> .detail>p{
     text-align: justify;
     text-indent: 4em;
-    font-size: 20px
 }
 span.showText{
     -webkit-user-select: none;
@@ -179,4 +208,58 @@ span.showText:hover{
     transition: 0.2s;
     color: #2d39a3;
     border-bottom: 1px solid #2d39a3;
+}
+.link{
+    font-size: 25px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 15px 0;
+    border-radius: 10px 25px 10px 25px;
+    margin: 20px 0;
+    color: #eef592;
+    background-color: #45817fde;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.link > span{
+    margin: 0 10px;
+    padding: 0 10px;
+    font-weight: 600;
+    color: #fa8354;
+    transition: 0.45s;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+.link > span:hover{
+    background-color: #4040402f;
+    border-bottom: 1px solid #fa8354;
+    scale: 1.07;
+    transition: 0.3s;
+}
+@media only screen and (max-width:870px) {
+    .content{
+        justify-content: center;
+    }
+    .content > *{
+        margin:  10px 1%;
+        width: 93%;
+    }
+    .contentCon>.contentTopic{
+        font-size: 29px;
+    }
+    .contentCon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+}
+@media only screen and (max-width:470px){
+    .content > *{
+        width: 100%;
+    }
+
 }

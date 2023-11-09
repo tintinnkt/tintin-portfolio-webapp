@@ -236,8 +236,7 @@ nav.navBar {
     }
 
     .navBar ul li a {
-
-        margin-bottom: 12px;
+        margin: 20px;
     }
 
     .logoCon {

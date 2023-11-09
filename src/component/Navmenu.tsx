@@ -64,13 +64,13 @@ const Navmenu: React.FC<NavmenuProps> = ({ activeSection, showSection }) => {
       </div>
       <nav className={`${style.navBar} ${isNavActive ? style.active : ''}`}>
         <ul>
-          <NavigationLink
+          {/* <NavigationLink
             activeSection={activeSection}
             section="homecontent"
             showSection={showSection}
             label="Home"
             setIsNavActive={setIsNavActive}
-          />
+          /> */}
           <NavigationLink
             activeSection={activeSection}
             section="myinfo"

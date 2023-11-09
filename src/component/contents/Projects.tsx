@@ -32,7 +32,7 @@ const Tabber: React.FC<ToggleProps> = ({ onToggle }) => {
 
 type Props = {}
 
-const Projects: React.FC<Props> = (props: Props) => {
+const Projects: React.FC<Props> = () => {
   const [projectShowing, setShowing] = useState<boolean>(true);
 
   return (

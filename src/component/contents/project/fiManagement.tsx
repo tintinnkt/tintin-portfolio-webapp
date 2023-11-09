@@ -1,11 +1,10 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import style from '../../../style/contentStyle/projectContent.module.css'
 import imgData from '../../../assets/picDerectory/fi-management.json'
 
 import PictureSlide from '../PictureSlide'
-type Props = {}
 
-const FiManagement = (props: Props) =>{
+const FiManagement = () =>{
   const [showMore, setShowMore] = useState(false);
 
   const toggleReadMore = () => {

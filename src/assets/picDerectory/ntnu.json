@@ -1,14 +1,14 @@
 [
     {
-      "src": "src/assets/activitiesPics/NTNU/image1.png",
+      "src": "/picture/activitiesPics/NTNU/image1.png",
       "description": "Visited : 台北科技大學 \n Naitonal Taipei University of Science and Technology"
     },
     {
-      "src": "src/assets/activitiesPics/NTNU/image(1).png",
+      "src": "/picture/activitiesPics/NTNU/image(1).png",
       "description": "Visited : 銘傳大學 MingChuan University"
     },
     {
-      "src": "src/assets/activitiesPics/NTNU/image(2).png",
+      "src": "/picture/activitiesPics/NTNU/image(2).png",
       "description": "Visited : 銘傳大學 MingChuan University"
     }
   ]

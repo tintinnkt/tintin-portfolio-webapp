@@ -1,11 +1,11 @@
 [
-  {"src":"src/assets/ProfilePics/P1012832-01-01.jpeg"},
-  {"src":"src/assets/ProfilePics/P1012287-01.jpeg"},
-  {"src":"src/assets/ProfilePics/IMG_20230916_000650.jpg"},
-  {"src":"src/assets/ProfilePics/IMG_20231028_225451.jpg"},
-  {"src":"src/assets/ProfilePics/IMG_20231028_225545.jpg"},
-  {"src":"src/assets/ProfilePics/IMG_20231028_225650.jpg"},
-  {"src": "src/assets/ProfilePics/image(2).png"},
-  {"src":"src/assets/ProfilePics/P1012147 (1)-01.jpeg"},
-  {"src":"src/assets/ProfilePics/P1012279-01.jpeg"}
+  {"src":"/picture/ProfilePics/P1012832-01-01.jpeg","description":""},
+  {"src":"/picture/ProfilePics/P1012287-01.jpeg","description":""},
+  {"src":"/picture/ProfilePics/IMG_20230916_000650.jpg","description":""},
+  {"src":"/picture/ProfilePics/IMG_20231028_225451.jpg","description":""},
+  {"src":"/picture/ProfilePics/IMG_20231028_225545.jpg","description":""},
+  {"src":"/picture/ProfilePics/IMG_20231028_225650.jpg","description":""},
+  {"src": "/picture/ProfilePics/image(2).png","description":""},
+  {"src":"/picture/ProfilePics/P1012147 (1)-01.jpeg","description":""},
+  {"src":"/picture/ProfilePics/P1012279-01.jpeg","description":""}
 ]

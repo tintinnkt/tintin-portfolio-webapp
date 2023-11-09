@@ -8,14 +8,14 @@ import Home from './pages/home'
 
 function App() {
   return (
-    <>
+    <React.Fragment>
       <BrowserRouter>
         <Routes>
           <Route path='/' index element={<Home/>}/>
         </Routes>
       </BrowserRouter>
 
-    </>
+    </React.Fragment>
   )
 }
 

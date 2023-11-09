@@ -1,14 +1,14 @@
 [
   {
-    "src": "src/assets/activitiesPics/DS/111.jpg",
+    "src": "public/picture/activitiesPics/DS/111.jpg",
     "description": "เป็นตัวแทนจากสภานักเรียน เข้าร่วมพิธีวางพวงมาลา เนื่องในวันคล้ายวันสวรรคตพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว"
   },
   {
-    "src": "src/assets/activitiesPics/DS/112.jpg",
+    "src": "public/picture/activitiesPics/DS/112.jpg",
     "description": "เป็นตัวแทนจากสภานักเรียน เข้าร่วมพิธีวางพวงมาลา เนื่องในวันคล้ายวันสวรรคตพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว"
   },
   {
-    "src": "src/assets/activitiesPics/DS/113.jpg",
+    "src": "public/picture/activitiesPics/DS/113.jpg",
     "description": "เป็นตัวแทนจากสภานักเรียน เข้าร่วมพิธีวางพวงมาลา เนื่องในวันคล้ายวันสวรรคตพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว"
   }
 ]

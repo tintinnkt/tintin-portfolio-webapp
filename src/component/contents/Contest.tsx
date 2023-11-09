@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import style from '../../style/contentStyle/Contest.module.css'
 import posn from '../../assets/picDerectory/posn.json'
 //component
 import ContentHeader from '../ContentHeader'
 import PictureSlide from './PictureSlide'
 
-type Props = {}
 
-const Contest = (props: Props) => {
+
+const Contest = () => {
 
     const [showMore, setShowMore] = useState(false);
 
@@ -26,21 +26,21 @@ const Contest = (props: Props) => {
                 <div className={style.topicContest}>POSN Camp 1 && Camp 2</div>
                 <div className={style.posn}>
                     <div className={style.detail}>
-                        <div className={`${style.picCon} + ${style.picConPC} `}><PictureSlide images={[...posn.posn2, ...posn.posn1,]} style={{ height: '360px' }} /></div>
-                        <div className={`${style.picCon} + ${style.picConPhone} `}><PictureSlide images={[...posn.posn2, ...posn.posn1,]} style={{ height: '200px' }} /></div>
+                        <div className={`${style.picCon} + ${style.picConPC} `}><PictureSlide images={posn} style={{ height: '360px' }} /></div>
+                        <div className={`${style.picCon} + ${style.picConPhone} `}><PictureSlide images={posn} style={{ height: '200px' }} /></div>
 
                         <p>Through my participation in POSN camp1 and POSN camp2, I have gained a strong foundation in programming concepts and techniques. In the Camp 1st, I learned the basics of C programming, including variable types, operators, conditional statements, loops, arrays, strings, functions, pointers, and file management. This foundational knowledge laid the groundwork for my subsequent exploration of C++ programming in the Camp 2nd. There, I delved into {!showMorePOSN ? <span className={style.show} onClick={toggleReadMorePOSN}>...Read More</span> :
                             <span>the intricacies of data structures, such as linked lists, stacks, queues, heaps, and binary search trees, and gained proficiency in selecting appropriate algorithms for various problem-solving scenarios. My exposure to algorithms encompassed brute force algorithms, recursion, dynamic programming, greedy algorithms, Dijkstra's algorithm, and Big-O analysis of algorithms. These intensive learning experiences have equipped me with a comprehensive understanding of programming principles and practices, enabling me to confidently tackle complex programming challenges.<span className={style.show} onClick={toggleReadMorePOSN}>Read Less...</span></span>}</p>
                     </div>
                     <div className={style.certificate}>
                         <div className={style.picCon}>
-                            <img src="src/assets/contestPics/POSN/certificate/certificate-posn1.png" alt="posn1" />
+                            <img src="/picture/contestPics/POSN/certificate/certificate-posn1.png" alt="posn1" />
                             <div className={style.description}>เมื่อวันที่ 6-22 ตุลาคม พ.ศ.2565 <br />
                                 ศูนย์โอลิมปิกวิชาการ สอวน. ค่าย 1 วิชาคอมพิวเตอร์  <br />ปีการศึกษา 2565
                                 โรงเรียนสตรีวัดมหาพฤฒาราม ในพระบรมราชินูปถัมภ์</div>
                         </div>
                         <div className={style.picCon}>
-                            <img src="src/assets/contestPics/POSN/certificate/certificate-posn2.png" alt="posn2" />
+                            <img src="/picture/contestPics/POSN/certificate/certificate-posn2.png" alt="posn2" />
                             <div className={style.description}>เมื่อวันที่ 20 มีนาคม - 5 เมษายน พ.ศ.2566 <br />
                                 โครงการส่งเสริมโอลิมปิกวิชาการและพัฒนามาตรฐานวิทยาศาสตร์คณิตศาสตร์
                                 (สอวน.) <br />วิชาคอมพิวเตอร์ ค่าย 2 ปีการศึกษา 2565
@@ -56,7 +56,7 @@ const Contest = (props: Props) => {
                 <div className={style.ku01}>
                     <div className={style.mainContent}>
                         <div className={style.certificate}>
-                            <div className={style.picCon}><img src="src/assets/contestPics/KU01/ku01_certificate.png" alt="" />
+                            <div className={style.picCon}><img src="/picture/contestPics/KU01/ku01_certificate.png" alt="" />
                                 <div className={style.description}>
                                     KU01 การทดสอบความสามารถในการแก้ปัญหาโดยการเขียนโปรแกรม <br />เมื่อวันที่ 17 ธันวาคม พ.ศ.2565 <br />
                                     คณะวิศวะกรรมศาสตร์ ณ มหาวิทยาลัยเกษตรศาสตร์</div></div></div>

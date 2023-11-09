@@ -1,10 +1,6 @@
-{
-  "posn1": [
-    { "src": "src/assets/contestPics/POSN/posn1-1.png" },
-    { "src": "src/assets/contestPics/POSN/posn1-2.png" }
-  ],
-  "posn2": [
-    { "src": "src/assets/contestPics/POSN/posn2-1.jpg" },
-    { "src": "src/assets/contestPics/POSN/posn2-2.jpg" }
+ [
+    { "src": "picture/contestPics/POSN/posn1-1.png" ,"description":""},
+    { "src": "picture/contestPics/POSN/posn1-2.png" ,"description":""},
+    { "src": "picture/contestPics/POSN/posn2-1.jpg" ,"description":""},
+    { "src": "picture/contestPics/POSN/posn2-2.jpg" ,"description":""}
   ]
-}

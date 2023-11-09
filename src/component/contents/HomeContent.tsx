@@ -1,12 +1,11 @@
 import React from 'react'
-import ContentHeader from '../ContentHeader'
 
-type Props = {}
 
-const HomeContent = (props: Props) => {
+
+const HomeContent = () => {
   return (
-    <div>
-    </div>
+    <React.Fragment>
+    </React.Fragment>
   )
 }
 

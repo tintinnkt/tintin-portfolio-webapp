@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import style from '../../../style/contentStyle/projectContent.module.css'
-type Props = {}
 
-const MyPort = (props: Props) => {
+
+const MyPort = () => {
   const [show,setShow] =useState(false)
   return (
     <section className={style.ProjectContent} id='myport'>

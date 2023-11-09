@@ -79,7 +79,7 @@ function MyInfo({ }: Props) {
         <div className={style.hobby}>
 
           <ul className={style.song}>
-            <li><Text label='Songs' /></li>
+            <li><Text label='Songs' > </Text></li>
             <li className={style.playlist}>
               <iframe
                 style={{ borderRadius: '12px' }}
@@ -110,7 +110,7 @@ function MyInfo({ }: Props) {
             </li>
           </ul>
           <ul className={style.hobby}>
-            <li><Text label='Podcasts' /></li>
+            <li><Text label='Podcasts' > </Text></li>
             {podcastSrcs.map((src, index) => (
               <li className={style.podcasts} key={index}>
                 <iframe

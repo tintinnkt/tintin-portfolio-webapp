@@ -10,19 +10,6 @@ type TextProps = {
   label: string;
   children: string;
 };
-const podcastSrcs = [
-  'https://open.spotify.com/embed/episode/2eMPZAg6eHHTF8YSKu5eRF?utm_source=generator',
-  'https://open.spotify.com/embed/episode/4ODXrdVhbGjcKEg476Z7wQ?utm_source=generator',
-  'https://open.spotify.com/embed/episode/5dJukBdd4q64jwfocwAwgl?utm_source=generator',
-  'https://open.spotify.com/embed/episode/5nn0IuSM8v79gyZpyGmJAS?utm_source=generator',
-];
-const trackSrcs = [
-  'https://open.spotify.com/embed/track/5sXuZdRY3HYCDIuZGjaUhB?utm_source=generator',
-  'https://open.spotify.com/embed/track/0fHmpM00nb8arza6MMvM6i?utm_source=generator',
-  'https://open.spotify.com/embed/track/1tKS0JOuzOOjHI2UzFg90x?utm_source=generator',
-  'https://open.spotify.com/embed/track/4KBegMBVyHsfC7fPOztTzV?utm_source=generator',
-  'https://open.spotify.com/embed/track/3V04nXHMTLytI0hV1Rjwps?utm_source=generator',
-];
 
 
 
@@ -73,67 +60,6 @@ function MyInfo({ }: Props) {
        </div>
           </div>
         </main>
-
-        <main className={`${style.contents} ${style.additionContent}` } >
-        <div className={style.Topic}>Hobby</div>
-        <div className={style.hobby}>
-
-          <ul className={style.song}>
-            <li><Text label='Songs' > </Text></li>
-            <li className={style.playlist}>
-              <iframe
-                style={{ borderRadius: '12px' }}
-                src="https://open.spotify.com/embed/playlist/0nY81T4qRcFAE1Ox7NrSQ2?utm_source=generator"
-                width="100%"
-                height="420"
-                frameBorder="0"
-                allowFullScreen={true}
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              />
-            </li>
-            <li>
-              {trackSrcs.map((src, index) => (
-                <li key={index}>
-                  <iframe
-                    style={{ borderRadius: '12px' }}
-                    src={src}
-                    width="100%"
-                    height={100}
-                    frameBorder={0}
-                    allowFullScreen={true}
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"
-                  />
-                </li>
-              ))}
-            </li>
-          </ul>
-          <ul className={style.hobby}>
-            <li><Text label='Podcasts' > </Text></li>
-            {podcastSrcs.map((src, index) => (
-              <li className={style.podcasts} key={index}>
-                <iframe
-                  style={{ borderRadius: '12px' }}
-                  src={src}
-                  width="97%"
-                  height={235.5}
-                  frameBorder={0}
-                  allowFullScreen={true}
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-        </main>
-
-
-
-
-
-
       </div>
     </React.Fragment>
   )
